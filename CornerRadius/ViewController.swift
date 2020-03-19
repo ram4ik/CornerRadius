@@ -11,8 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let myView = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+        myView.center = self.view.center
+        myView.backgroundColor = .green
+        self.view.addSubview(myView)
     }
 
 
